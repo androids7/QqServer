@@ -9,6 +9,7 @@ public class ClientThreadManage {
 	//add a client communication thread in hm
 	public static void addClientThread(String uId, ServerClientThread sct) {
 		hm.put(uId, sct);
+		hm.clear();
 	}
 	
 	public static ServerClientThread getClientThread (String uId) {
